@@ -72,10 +72,10 @@ function SectionDistrubition({ title, banner = false }: ISectionDistrubition) {
         </h3>
         <div className="flex gap-[20px]  items-center">
           {online_points.map((item) => (
-            <div className="w-[45px] relative h-[45px]">
+            <div key={nanoid()} className="w-[45px] relative h-[45px]">
               <Image
                 fill
-                key={nanoid()}
+                
                 className="rounded-full absolute inset-0"
                 src={item}
                 alt="online-point"
